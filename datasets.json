@@ -4,6 +4,6 @@
     "organization": "Sample Department",
     "notes": "This is an example dataset that comes with a new installation of JKAN",
     "category": ["Education"],
-    "url": "https://mapsa.github.io/data-catalogue/datasets/sample-dataset/"
+    "url": "/data-catalogue/datasets/sample-dataset/"
   }
 ]
