@@ -9,8 +9,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Datasets - SDF Data Catalogue</title>
-  <meta name="description" content="A lightweight, backend-free open data portal, powered by Jekyll.">
+  <title>Financial Institution 1 - SDF Data Catalogue</title>
+  <meta name="description" content="">
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   
@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.2/css/select2.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/notie/3.0.0/notie.min.css">
   <link rel="stylesheet" href="/data-catalogue/css/main.css">
-  <link rel="canonical" href="/data-catalogue/datasets/">
+  <link rel="canonical" href="/data-catalogue/organizations/uoe/">
 
   
 
@@ -31,7 +31,7 @@
 
   
     <!-- Open Graph -->
-    <meta property="og:title" content="Datasets" />
+    <meta property="og:title" content="Financial Institution 1" />
 <meta property="og:site_name" content="SDF Data Catalogue" />
 
 <meta property="og:description" content="A lightweight, backend-free open data portal, powered by Jekyll." />
@@ -46,7 +46,7 @@
   <script>
   var settings = {
     BASE_URL: "/data-catalogue",
-    PAGE_URL: "/datasets/",
+    PAGE_URL: "/organizations/uoe/",
     REPO_BRANCH: "gh-pages",
     REPO_OWNER: "timwis",
     REPO_NAME: "jkan",
@@ -70,11 +70,11 @@
       <ul class="navbar-nav">
         
           
-          <li class="nav-item active"><a class="nav-link" href="/data-catalogue/datasets/">Datasets <span class="sr-only">(current)</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="/data-catalogue/datasets/">Datasets</a></li>
           
         
           
-          <li class="nav-item"><a class="nav-link" href="/data-catalogue/organizations/">Organizations</a></li>
+          <li class="nav-item active"><a class="nav-link" href="/data-catalogue/organizations/">Organizations <span class="sr-only">(current)</span></a></li>
           
         
           
@@ -107,29 +107,103 @@
   
     <li class="breadcrumb-item"><a href="/data-catalogue/"><i class="fa fa-home" aria-label="Home"></i></a></li>
     
-    <li class="breadcrumb-item active">Datasets</li>
+      
+      
+        <li class="breadcrumb-item"><a href="/data-catalogue/organizations/">Organizations</a></li>
+      
+    
+    <li class="breadcrumb-item active">Financial Institution 1</li>
   
 </ol>
 
-
-<div class="row">
-  <div class="col-sm-4">
-
-    <h3>Categories</h3>
-    <div class="list-group" data-component="categories-filter" data-show="5"></div>
-
-    <h3>Organizations</h3>
-    <div class="list-group" data-component="organizations-filter" data-show="15"></div>
-
-    <!-- <h3>Products</h3>
-    <div class="list-group" data-component="products-filter" data-show="15"></div> -->
+<div class="container">
+<div data-component="view-switcher">
+  <div data-hook="view" data-view="display">
+    <div class="row">
+      
+      <div class="col-sm-3" style = "float: left;">
+        <a href="http://i.imgur.com/mrC5xVT.png" class="thumbnail"><img class="img-thumbnail rounded mx-auto d-block" src="http://i.imgur.com/mrC5xVT.png" alt="Financial Institution 1 logo"></a>
+      </div>
+      <div class="col-sm-9" style = "float: right;" >
+      
+        <h1>
+          Financial Institution 1
+          <a href="?view=edit" class="float-right btn btn-outline-secondary admin-only">Edit</a>
+        </h1>
+        <p>This is an example department provided with a new installation of JKAN</p>
+        <div data-component="datasets-list" data-organization="financial-institution-1">
+          <h3 class="datasets-count" data-hook="datasets-count"></h3>
+          <input type="text" data-hook="search-query" placeholder="Search..." class="form-control mb-3">
+          <div data-hook="datasets-items"></div>
+        </div>
+      </div>
+      <div class="view-code-link">
+        <a href="https://github.com/timwis/jkan/edit/gh-pages/_organizations/uoe.md"  target="_blank"><i class="fa fa-code"></i> Open in GitHub</a>
+      </div>
+    </div>
   </div>
-  <div class="col-sm-8" data-component="datasets-list">
-    <h3 class="datasets-count" data-hook="datasets-count"></h3>
-    <a href="/data-catalogue/add-dataset/" class="btn btn-outline-secondary float-right admin-only" data-hook="add-dataset-btn"><i class="fa fa-plus"></i> Add Dataset</a>
-    <input type="text" data-hook="search-query" placeholder="Search..." class="form-control mb-3">
-    <div data-hook="datasets-items"></div>
+
+  <div data-hook="view" data-view="edit">
+    <div class="row">
+      <div class="col-sm-8 offset-sm-2">
+        
+
+
+
+<form data-component="form"
+  data-file-dir="_organizations"
+  data-render-dir="organizations"
+  
+    data-file-path="_organizations/uoe.md"
+    data-render-path="/organizations/uoe/"
+  >
+  <input type="hidden" id="schema" name="schema" value="default">
+
+  <fieldset>
+    
+      
+      
+      
+      <div class="form-group">
+  <label for="title">Title</label>
+  <input type="text" class="form-control" id="title" name="title" placeholder="" value="Financial Institution 1">
+</div>
+
+    
+      
+      
+      
+      <div class="form-group">
+  <label for="description">Description</label>
+  <input type="text" class="form-control" id="description" name="description" placeholder="" value="This is an example department provided with a new installation of JKAN">
+</div>
+
+    
+      
+      
+      
+      <div class="form-group">
+  <label for="logo">Logo</label>
+  <input type="text" class="form-control" id="logo" name="logo" placeholder="" value="http://i.imgur.com/mrC5xVT.png">
+</div>
+
+    
+  </fieldset>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+  
+    <button class="btn btn-danger" data-component="delete-page-button" data-file-path="_organizations/uoe.md">
+      <i class="fa fa-trash"></i> Delete organization
+    </button>
+  
+  <a href="/data-catalogue/organizations/uoe/" class="btn btn-outline-secondary float-right">Cancel</a>
+</form>
+
+      </div>
+    </div>
   </div>
+</div>
+</div>
 </div>
 
     </section>

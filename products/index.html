@@ -9,7 +9,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Datasets - SDF Data Catalogue</title>
+  <title>products - SDF Data Catalogue</title>
   <meta name="description" content="A lightweight, backend-free open data portal, powered by Jekyll.">
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.2/css/select2.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/notie/3.0.0/notie.min.css">
   <link rel="stylesheet" href="/data-catalogue/css/main.css">
-  <link rel="canonical" href="/data-catalogue/datasets/">
+  <link rel="canonical" href="/data-catalogue/products/">
 
   
 
@@ -31,7 +31,7 @@
 
   
     <!-- Open Graph -->
-    <meta property="og:title" content="Datasets" />
+    <meta property="og:title" content="products" />
 <meta property="og:site_name" content="SDF Data Catalogue" />
 
 <meta property="og:description" content="A lightweight, backend-free open data portal, powered by Jekyll." />
@@ -46,7 +46,7 @@
   <script>
   var settings = {
     BASE_URL: "/data-catalogue",
-    PAGE_URL: "/datasets/",
+    PAGE_URL: "/products/",
     REPO_BRANCH: "gh-pages",
     REPO_OWNER: "timwis",
     REPO_NAME: "jkan",
@@ -70,7 +70,7 @@
       <ul class="navbar-nav">
         
           
-          <li class="nav-item active"><a class="nav-link" href="/data-catalogue/datasets/">Datasets <span class="sr-only">(current)</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="/data-catalogue/datasets/">Datasets</a></li>
           
         
           
@@ -78,7 +78,7 @@
           
         
           
-          <li class="nav-item"><a class="nav-link" href="/data-catalogue/products/">Products</a></li>
+          <li class="nav-item active"><a class="nav-link" href="/data-catalogue/products/">Products <span class="sr-only">(current)</span></a></li>
           
         
       </ul>
@@ -107,30 +107,30 @@
   
     <li class="breadcrumb-item"><a href="/data-catalogue/"><i class="fa fa-home" aria-label="Home"></i></a></li>
     
-    <li class="breadcrumb-item active">Datasets</li>
+    <li class="breadcrumb-item active">products</li>
   
 </ol>
 
 
-<div class="row">
-  <div class="col-sm-4">
+<a href="/data-catalogue/add-product/" class="btn btn-outline-secondary float-right admin-only" data-hook="add-product-btn"><i class="fa fa-plus"></i> Add product</a>
 
-    <h3>Categories</h3>
-    <div class="list-group" data-component="categories-filter" data-show="5"></div>
 
-    <h3>Organizations</h3>
-    <div class="list-group" data-component="organizations-filter" data-show="15"></div>
-
-    <!-- <h3>Products</h3>
-    <div class="list-group" data-component="products-filter" data-show="15"></div> -->
+  
+  <div class="media">
+    <div class="mr-3">
+      
+        <a href="/data-catalogue/products/sample-department/" class="product-thumbnail">
+          <img class="media-object" src="http://i.imgur.com/mrC5xVT.png" alt="Consumer Transactions">
+        </a>
+      
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading"><a href="/data-catalogue/products/sample-department/">Consumer Transactions</a></h4>
+      <p style="text-align: justify;">This is an example department provided with a new installation of JKAN</p>
+      <p><a href="/data-catalogue/datasets/?product=consumer-transactions"><span class="badge badge-primary badge-pill">1</span> datasets</a></p>
+    </div>
   </div>
-  <div class="col-sm-8" data-component="datasets-list">
-    <h3 class="datasets-count" data-hook="datasets-count"></h3>
-    <a href="/data-catalogue/add-dataset/" class="btn btn-outline-secondary float-right admin-only" data-hook="add-dataset-btn"><i class="fa fa-plus"></i> Add Dataset</a>
-    <input type="text" data-hook="search-query" placeholder="Search..." class="form-control mb-3">
-    <div data-hook="datasets-items"></div>
-  </div>
-</div>
+
 
     </section>
 
